@@ -1,0 +1,30 @@
+\section{KULLANILAN YAZILIMLAR VE YÖNTEMLER}
+
+Bu uygulama, \textbf{HTML}, \textbf{CSS} ve \textbf{JavaScript} kullanılarak geliştirilmiştir. Backend geliştirmesi \textbf{Node.js} ortamında \textbf{Express.js} framework'ü ile yapılmış, verilerin güvenli ve düzenli bir şekilde saklanabilmesi için \textbf{MySQL} veritabanı tercih edilmiştir. Harita tabanlı etkileşimleri sağlamak için \textbf{Leaflet.js} kütüphanesi, rota hesaplama ve mesafe/süre bilgileri için \textbf{OpenRouteService API}, konum koordinatları için \textbf{OpenStreetMap Nominatim API} kullanılmıştır. Kullanıcı kimlik doğrulaması için \textbf{JWT (JSON Web Token)} ve şifre güvenliği için \textbf{bcrypt} kütüphanesi entegre edilmiştir.
+
+\subsection{HTML}
+HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturmak için kullanılan temel işaretleme dilidir. Uygulamada sayfa yapıları, içeriklerin düzenlenmesi ve kullanıcıya sunulacak bilgilerin görsel olarak yerleştirilmesi HTML ile hazırlanmıştır. Basit ve anlaşılır yapısı sayesinde, projenin diğer teknolojilerle entegre edilmesine kolaylık sağlamaktadır \cite{k1}.
+
+\subsection{CSS}
+CSS (Cascading Style Sheets), web sayfalarının tasarım ve görünümünü şekillendirmek için kullanılan bir stil dilidir. Bu proje kapsamında kullanıcı dostu bir arayüz oluşturmak, etkileşimli harita ile uyumlu bir tasarım sağlamak ve mobil uyumlu sayfalar geliştirmek için CSS kullanılmıştır \cite{k2}.
+
+\subsection{JavaScript}
+JavaScript, web sayfalarına dinamik özellikler kazandıran programlama dilidir. Uygulamada harita etkileşimleri, kullanıcı girişleri, form validasyonları ve içeriklerin anlık güncellenmesi gibi işlevler JavaScript ile gerçekleştirilmiştir. Modern web geliştirmede yaygın olarak kullanılması, projenin daha esnek ve etkileşimli olmasını sağlamıştır \cite{k3}.
+
+\subsection{Node.js ve Express.js}
+Node.js, sunucu tarafında JavaScript çalıştırmaya olanak sağlayan bir çalışma ortamıdır. Express.js ise Node.js için minimal ve esnek bir web uygulama framework'üdür. Projede REST API geliştirmesi, kullanıcı taleplerinin işlenmesi ve verilerin yönetilmesi Node.js ve Express.js aracılığıyla sağlanmıştır. Asenkron yapısı sayesinde uygulamanın hızlı çalışmasına katkıda bulunmuştur \cite{k4}.
+
+\subsection{MySQL}
+MySQL, ilişkisel veritabanı yönetim sistemidir. Uygulamada şehirler, ilçeler, gezilecek yerler, kullanıcı bilgileri ve diğer veriler MySQL veritabanında düzenli şekilde depolanmıştır. Güvenilirliği ve yaygın kullanımı, projenin veri yönetiminde önemli avantaj sağlamıştır \cite{k5}.
+
+\subsection{Leaflet.js}
+Leaflet.js, mobil uyumlu interaktif haritalar oluşturmak için kullanılan açık kaynaklı bir JavaScript kütüphanesidir. Bu proje kapsamında rota planlayıcı modülünde gezilecek yerlerin harita üzerinde gösterilmesi, marker'ların eklenmesi ve kullanıcı etkileşimleri Leaflet.js ile sağlanmıştır. Hafif yapısı ve OpenStreetMap desteği ile tercih edilmiştir \cite{k6}.
+
+\subsection{OpenRouteService API}
+OpenRouteService, açık kaynaklı harita verileri üzerine kurulu bir rota hesaplama servisidir. Projede kullanıcının seçtiği noktalar arasındaki mesafe (kilometre) ve tahmini süre (dakika) hesaplamak için OpenRouteService API kullanılmıştır. Araç, yürüyüş ve bisiklet modları desteklenmektedir \cite{k7}.
+
+\subsection{OpenStreetMap Nominatim API}
+OpenStreetMap Nominatim, yer isimlerini koordinatlara (geocoding) çevirmek için kullanılan ücretsiz bir API'dir. Projede gezilecek yerlerin koordinatlarının elde edilmesi ve harita üzerinde doğru konumlarda gösterilmesi için Nominatim API kullanılmıştır \cite{k8}.
+
+\subsection{JWT ve bcrypt}
+JWT (JSON Web Token), kullanıcı kimlik doğrulaması için kullanılan güvenli bir token standardıdır. bcrypt ise şifreleri güvenli bir şekilde hashlemek için kullanılan bir kütüphanedir. Projede kullanıcı giriş/kayıt işlemlerinde JWT ile oturum yönetimi, bcrypt ile şifre güvenliği sağlanmıştır \cite{k9}.
